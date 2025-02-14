@@ -45,15 +45,13 @@ function mostrarContador() {
 
     // Ocultar la caja fuerte
     container.style.display = 'none';
+    // Ocultar otras secciones
+    seccionCarta.style.display = 'none';
+    // Ocultar la galería
+    seccionGaleria.style.display = 'none';
 
     // Mostrar el contador
     seccionContador.style.display = 'block';
-
-    // Ocultar otras secciones
-    seccionCarta.style.display = 'none';
-
-    // Mostrar la galería
-    seccionGaleria.style.display = 'none';
 }
 
 // Función para actualizar el contador
