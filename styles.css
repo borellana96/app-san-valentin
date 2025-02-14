@@ -313,6 +313,14 @@ body {
     text-align: left;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  margin-top: 10px;
+}
 
 
 @media (max-width: 768px) {

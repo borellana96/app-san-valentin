@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caja Fuerte de San Valentín</title>
+    <title>San Valentín</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -56,8 +56,7 @@
     <div id="seccion-contador" class="seccion-contador">
         <!-- Cabecera -->
         <div class="cabecera">
-            <img src="./assets/img/u-gansos.jpeg"
-                alt="" class="imagen-cabecera">
+            <img src="./assets/img/u-gansos.jpeg" alt="" class="imagen-cabecera">
             <div class="titulo-cabecera">
                 <h1>Nuestro Tiempo Juntos</h1>
             </div>
@@ -123,21 +122,8 @@
             <img src="./assets/img/playa3.jpeg" alt="Foto 6">
         </div>
 
-        <button class="boton-transparente boton-contador" onclick="mostrarContador()">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#d1548f"
-                fill="none">
-                <path
-                    d="M12.0027 21C7.28739 21 4.92973 21 3.46487 19.5355C2 18.0711 2 15.714 2 11V7.94427C2 6.1278 2 5.21956 2.38042 4.53806C2.6516 4.05227 3.05255 3.65142 3.53848 3.38032C4.22017 3 5.12865 3 6.94562 3C8.10968 3 8.69172 3 9.20122 3.19101C10.3645 3.62712 10.8442 4.68358 11.3691 5.73313L12.0027 7M8.00163 7H16.754C18.8613 7 19.9149 7 20.6718 7.50559C20.9995 7.72447 21.2808 8.00572 21.4997 8.33329C21.8937 8.92282 21.9808 9.69244 22 11"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                <path
-                    d="M20.586 13.331C18.7898 12.3795 17.5 13.7821 17.5 13.7821C17.5 13.7821 16.2102 12.3795 14.4139 13.331C12.2383 14.4834 12.0821 18.9964 17.5 21C22.9179 18.9964 22.7616 14.4834 20.586 13.331Z"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            Volver a nuestros días
-        </button>
-
         <!-- Botón para ir a la carta -->
-        <button class="boton-transparente boton-contador" onclick="mostrarCarta()">
+        <button class="boton-transparente boton-contador" onclick="mostrarCarta()" style="font-weight: bold;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#d1548f"
                 fill="none">
                 <path
@@ -155,6 +141,22 @@
             </svg>
             Ver Carta
         </button>
+
+        <!-- Botón para regresar al contador -->
+        <button class="boton-transparente boton-contador" onclick="mostrarContador()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#d1548f"
+                fill="none">
+                <path
+                    d="M12.0027 21C7.28739 21 4.92973 21 3.46487 19.5355C2 18.0711 2 15.714 2 11V7.94427C2 6.1278 2 5.21956 2.38042 4.53806C2.6516 4.05227 3.05255 3.65142 3.53848 3.38032C4.22017 3 5.12865 3 6.94562 3C8.10968 3 8.69172 3 9.20122 3.19101C10.3645 3.62712 10.8442 4.68358 11.3691 5.73313L12.0027 7M8.00163 7H16.754C18.8613 7 19.9149 7 20.6718 7.50559C20.9995 7.72447 21.2808 8.00572 21.4997 8.33329C21.8937 8.92282 21.9808 9.69244 22 11"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path
+                    d="M20.586 13.331C18.7898 12.3795 17.5 13.7821 17.5 13.7821C17.5 13.7821 16.2102 12.3795 14.4139 13.331C12.2383 14.4834 12.0821 18.9964 17.5 21C22.9179 18.9964 22.7616 14.4834 20.586 13.331Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Volver a nuestros días
+        </button>
+
+
     </div>
 
     <!-- Sección de la carta (oculta inicialmente) -->
@@ -167,17 +169,63 @@
         <!-- Contenido de la carta -->
         <div class="contenido-carta">
             <p>
-                Srta Sabina Nicoll,<br><br>
-                En nuestro primer 14, quiero recordarte lo increíble que eres y lo afortunado que soy de tenerte en mi vida.
-                Cada momento a tu lado es un regalo y me gustaría que sean más, llenos de risas y aventuras.
-                No me cansaré de decirte lo mucho que te amo, eres muy importante para mí y quiero que sepas que siempre estaré a tu lado.
-                Quiero que seas mi San Valentin hoy y siempre.
-                Gracias <br>
-                
-                Pdt: No olvidar que el sábado tenemos una cita, pero en el MonUmental<br><br>
+                Srta. Sabina Nicoll (China ♥),<br><br>
+                Es nuestro primer 14, y a pesar que llevamos poco tiempo, no podía pasar de alto esta fecha especial.
+                Quiero recordarte la increíble mujer que eres y lo afortunado que soy de tenerte en mi vida.
+                Los mejores regalos que pueda tener son cada uno de los momentos que pasamos juntos,
+                no me cansaré de decirte lo mucho que te amo, lo importante que eres para mí y que quiero que sepas que
+                siempre
+                estaré a tu lado.
+                Que Dios nos permita seguir viviendo lo mágico de nuestra relación, llenos de risas, estadios y viajes
+                por la U.<br>
+                Gracias, mi San Valentin de hoy y siempre. <br>
+
+                Pdt: No olvidar que el sábado tenemos una cita, pero en el MonUmental :)<br><br>
                 Con todo mi cariño,<br>
                 Brian ♥
             </p>
+        </div>
+
+        <!-- Pregunta seria -->
+        <div class="form">
+
+            <div class="question">
+                ¿Aceptarías ser mi San Valentín?
+            </div>
+
+            <div class="answer">
+                <!-- Botón para descargar entradas -->
+                <a
+                    href="https://res.cloudinary.com/dwekfgzeb/image/upload/fl_attachment/v1739515999/Nuestra_cita_ginkkn.pdf">
+                    <button class="boton-transparente boton-contador" style="font-weight: bold;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#d1548f" fill="none">
+                            <path
+                                d="M12.0027 21C7.28739 21 4.92973 21 3.46487 19.5355C2 18.0711 2 15.714 2 11V7.94427C2 6.1278 2 5.21956 2.38042 4.53806C2.6516 4.05227 3.05255 3.65142 3.53848 3.38032C4.22017 3 5.12865 3 6.94562 3C8.10968 3 8.69172 3 9.20122 3.19101C10.3645 3.62712 10.8442 4.68358 11.3691 5.73313L12.0027 7M8.00163 7H16.754C18.8613 7 19.9149 7 20.6718 7.50559C20.9995 7.72447 21.2808 8.00572 21.4997 8.33329C21.8937 8.92282 21.9808 9.69244 22 11"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            <path
+                                d="M20.586 13.331C18.7898 12.3795 17.5 13.7821 17.5 13.7821C17.5 13.7821 16.2102 12.3795 14.4139 13.331C12.2383 14.4834 12.0821 18.9964 17.5 21C22.9179 18.9964 22.7616 14.4834 20.586 13.331Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Sí, acepto
+                    </button>
+                </a>
+
+                <button class="boton-transparente boton-contador" onclick="insistir()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#d1548f"
+                        fill="none">
+                        <path
+                            d="M12.0027 21C7.28739 21 4.92973 21 3.46487 19.5355C2 18.0711 2 15.714 2 11V7.94427C2 6.1278 2 5.21956 2.38042 4.53806C2.6516 4.05227 3.05255 3.65142 3.53848 3.38032C4.22017 3 5.12865 3 6.94562 3C8.10968 3 8.69172 3 9.20122 3.19101C10.3645 3.62712 10.8442 4.68358 11.3691 5.73313L12.0027 7M8.00163 7H16.754C18.8613 7 19.9149 7 20.6718 7.50559C20.9995 7.72447 21.2808 8.00572 21.4997 8.33329C21.8937 8.92282 21.9808 9.69244 22 11"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                            d="M20.586 13.331C18.7898 12.3795 17.5 13.7821 17.5 13.7821C17.5 13.7821 16.2102 12.3795 14.4139 13.331C12.2383 14.4834 12.0821 18.9964 17.5 21C22.9179 18.9964 22.7616 14.4834 20.586 13.331Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    No, Gracias
+                </button>
+            </div>
+
         </div>
 
         <!-- Botón para volver a la galería -->
@@ -196,7 +244,7 @@
     </div>
 
     <script src="script.js"></script>
-    
+
     <script src="https://unpkg.com/date-fns@latest"></script>
 </body>
 

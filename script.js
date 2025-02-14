@@ -1,8 +1,11 @@
 // Contraseña predefinida
 const CONTRASENA = "281024"; // Cambia esto por la contraseña que desees
-  
+
 // Variable para almacenar la contraseña ingresada
 let contrasenaIngresada = "";
+
+// Contador de insistencias
+let contInsistencia;
 
 // Función para agregar números al display
 function agregarNumero(numero) {
@@ -59,17 +62,31 @@ function actualizarContador() {
     const fechaInicio = new Date('2024-10-28 18:50:00'); // Cambia esta fecha por la que desees
     const ahora = new Date();
 
+    let diferenciaMs = ahora - fechaInicio;
+
     let anos = ahora.getFullYear() - fechaInicio.getFullYear();
     let meses = ahora.getMonth() - fechaInicio.getMonth();
     let dias = ahora.getDate() - fechaInicio.getDate();
-    let horas = ahora.getHours() + (24 - fechaInicio.getHours());
-    let minutos = ahora.getMinutes() - fechaInicio.getMinutes();
-    let segundos = ahora.getSeconds() - fechaInicio.getSeconds();
+    let horas = ahora.getHours() - fechaInicio.getHours();
+    //let minutos = ahora.getMinutes() - fechaInicio.getMinutes();
+    // let segundos = ahora.getSeconds() + (60 - fechaInicio.getSeconds());
+    let minutos = Math.floor((diferenciaMs % (1000 * 60 * 60)) / (1000 * 60));
+    let segundos = Math.floor((diferenciaMs % (1000 * 60)) / 1000);
 
     //const { intervalToDuration } = dateFns;
     //const diferencia = intervalToDuration({ start: fechaInicio, end: ahora });
 
-   // console.log(`${diferencia.years} años, ${diferencia.months} meses, ${diferencia.days} días, ${diferencia.hours} horas, ${diferencia.minutes} minutos y ${diferencia.seconds} segundos.`);
+    // console.log(`${diferencia.years} años, ${diferencia.months} meses, ${diferencia.days} días, ${diferencia.hours} horas, ${diferencia.minutes} minutos y ${diferencia.seconds} segundos.`);
+
+    // Ajustar minutos si es negativo
+    // if (minutos < 0) {
+    //     minutos = ahora.getMinutes() + (60 - fechaInicio.getMinutes());
+    // }
+
+    // Ajustar horas si es negativo
+    if (horas < 0) {
+        horas = ahora.getHours() + (24 - fechaInicio.getHours());
+    }
 
     // Ajustar días si es negativo
     if (dias < 0) {
@@ -120,6 +137,7 @@ function mostrarGaleria() {
 
 // Función para mostrar la carta
 function mostrarCarta() {
+    contInsistencia = 0;
     const seccionGaleria = document.getElementById('seccion-galeria');
     const seccionCarta = document.getElementById('seccion-carta');
 
@@ -130,3 +148,14 @@ function mostrarCarta() {
     seccionCarta.style.display = 'block';
 }
 
+function insistir() {
+    contInsistencia++;
+    if (contInsistencia == 1)
+        alert("Esa no es la respuesta, vuelve a intentarlo :)");
+    else if (contInsistencia == 2)
+        alert("Qué? de nuevo te equivocaste? te daré una oportunidad más");
+    else if (contInsistencia == 3)
+        alert("China, marca bonito, no me hagas renegar");
+    else
+        alert("ya me cansé de los msjes, acepta crjo, jaja no mentira, te amo ♥");
+}
