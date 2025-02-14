@@ -40,12 +40,20 @@ function agregarNumero(numero) {
 function mostrarContador() {
     const container = document.querySelector('.container');
     const seccionContador = document.getElementById('seccion-contador');
+    const seccionGaleria = document.getElementById('seccion-galeria');
+    const seccionCarta = document.getElementById('seccion-carta');
 
     // Ocultar la caja fuerte
     container.style.display = 'none';
 
     // Mostrar el contador
     seccionContador.style.display = 'block';
+
+    // Ocultar otras secciones
+    seccionCarta.style.display = 'none';
+
+    // Mostrar la galería
+    seccionGaleria.style.display = 'none';
 }
 
 // Función para actualizar el contador
