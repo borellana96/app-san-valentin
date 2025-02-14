@@ -157,5 +157,5 @@ function insistir() {
     else if (contInsistencia == 3)
         alert("China, marca bonito, no me hagas renegar");
     else
-        alert("ya me cansé de los msjes, acepta crjo, jaja no mentira, te amo ♥");
+        alert("Ya me cansé de los msjes, Acepta crjo!! jaja no mentira, te amo ♥");
 }
