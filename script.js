@@ -31,7 +31,7 @@ function agregarNumero(numero) {
         if (contrasenaIngresada === CONTRASENA) {
             mostrarContador(); // Mostrar el contador si la contraseña es correcta
         } else {
-            alert("Contraseña incorrecta. Inténtalo de nuevo."); // Mostrar un mensaje de error
+            alert("Contraseña incorrecta. Inténtalo de nuevo. Acá veré la veces que te equivocas porsiaca ah :)"); // Mostrar un mensaje de error
             textoCodigo.textContent = 'Contraseña'; // Restablecer el texto
             display.classList.remove('modo-password'); // Quitar el modo de contraseña
             contrasenaIngresada = ""; // Reiniciar la contraseña ingresada
